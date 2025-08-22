@@ -1,41 +1,159 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+  color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.site-header {
+  background: #1a2733;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   padding: 0;
 }
 
-header {
-  background-color: #009c3c;
-  color: white;
-  padding: 20px;
-  text-align: center;
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-nav a {
-  color: white;
-  margin: 0 15px;
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.site-header h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin: 0 20px 0 0;
+  color: #ffd700;
+  flex: 1;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-link {
+  color: #f4f4f4;
   text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
 }
 
-nav a:hover {
-  color: yellow;             /* Warna bila hover */
+.nav-link:hover, .cta-link:hover {
+  background: #ffd700;
+  color: #1a2733;
 }
 
-main {
-  padding: 20px;
-}
-
-footer {
-  background-color: #009c3c;
+.hero {
+  background: rgba(44, 83, 100, 0.85);
+  border-radius: 16px;
+  padding: 40px 30px 30px 30px;
+  margin: 30px 0 20px 0;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
   text-align: center;
-  padding: 15px;
-  position: relative;
-  bottom: 0;
 }
 
-body {
-  background-image: url("images/bgi-eagle999.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.hero-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+section {
+  background: rgba(26, 39, 51, 0.92);
+  border-radius: 12px;
+  margin: 24px 0;
+  padding: 24px 28px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+
+section h3 {
+  color: #ffd700;
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.cta-link {
+  color: #ffd700;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.site-footer {
+  background: #1a2733;
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #b0b0b0;
+  border-top: 2px solid #ffd700;
+}
+
+@media (max-width: 700px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .site-header h1 {
+    margin: 10px 0;
+    font-size: 1.3rem;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  section, .hero {
+    padding: 18px 10px;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  margin-top: 4px;
+  background: #f4f4f4;
+  color: #222;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  margin-top: 10px;
 }
