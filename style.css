@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f4f6f9;
+  background: #bcd4f8;
   color: #333;
   line-height: 1.6;
   min-height: 100vh;
@@ -19,7 +19,7 @@ body {
 .site-header {
   background: #0d47a1; /* solid blue = more professional */
   box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-  padding: 14px 0;
+  padding: 0px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -234,6 +234,13 @@ section h3 {
   color: #fff;
 }
 
+.service-card p {
+  padding: 14px;
+  text-align: center;
+  background: #1976d2;
+  color: #fff;
+}
+
 .service-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.2);
@@ -264,19 +271,12 @@ section h3 {
   text-align: center;
   padding: 60px 20px;
   background: #ff9800;   /* ✅ oren solid untuk semua page */
-  color: #fff;
+  color: #000000;
   border-radius: 14px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.25);
 }
 
-.contact-cta h3,
-.contact-cta p,
-.contact-cta a {
-  color: #000000;
-  background: #ff9800;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6); /* bagi tulisan lebih jelas */
-  font-weight: 600;
-}
+
 
 .contact-cta a.cta-link {
   font-weight: 700;
